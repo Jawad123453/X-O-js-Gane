@@ -1,0 +1,65 @@
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{
+  background-color: #777;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.contaner{
+  width:400px;
+  background-color: white;
+  height:400px;
+  padding:10px;
+}
+.contaner.end{
+  pointer-events: none;
+}
+.contaner .turnes{
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  background-color: #f53655;
+  color:white;
+  margin-bottom: 10px;
+  font-size: 35px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contaner .baord{
+  width: 100%;
+  height: 320px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:5px;
+}
+.contaner .baord .box{
+  background-color: #f53655;
+  width: 120px;
+  height:100px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  font-size: 100px;
+  font-weight: normal;
+}
+.contaner .baord .box.ClassX,
+.contaner .baord .box.ClassO{
+  background-color: #f53655;
+  pointer-events: none;
+}
+.contaner .baord .box:hover,
+.contaner .baord .box.win{
+  background-color: black;
+}
